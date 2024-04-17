@@ -54,3 +54,8 @@ Bu şekilde, kullanıcı etkileşimleri veya belirli koşullar gerçekleştiğin
     Yukarıdaki örnekte, URL'den gelen `id` parametre değerini `params` nesnesinden alıyoruz.
 
 Bu şekilde, dinamik rotalarla çalışırken URL'den gelen parametre değerlerini bileşenlerinizde kullanabilirsiniz.
+
+
+## Error Handling (Hata İşleme)
+
+Bu practice'de, Axios kütüphanesi kullanılarak dış API'ye yapılan isteklerde oluşabilecek hataları ele alır. `useState` hook'u kullanılarak hata durumu (`error`) izlenir. `useEffect` hook'u ve Axios ile yapılan API isteği sırasında oluşan hatalar, `error` durumu true olarak ayarlanır ve kullanıcıya uygun bir hata mesajı gösterilir.
