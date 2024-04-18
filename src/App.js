@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import PersonDetail from "./pages/PersonDetail";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ListeningEvent from "./pages/ListeningEvent";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/user/:id" element={<PersonDetail />} />
-        </Routes>
+      <Navbar/>
+      <Routes>
+        <Route path="/listeningevent" element={<ListeningEvent/>}/>
+      </Routes>
       </BrowserRouter>
     </div>
   );
